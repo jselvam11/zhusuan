@@ -54,8 +54,8 @@ def q(n, net_size, n_particles):
 
 
 if __name__ == '__main__':
-    tf.set_random_seed(1234)
-    np.random.seed(1234)
+    #tf.set_random_seed(1234)
+    #np.random.seed(1234)
 
     # Load MNIST
     data_path = os.path.join(conf.data_dir, 'mnist.pkl.gz')

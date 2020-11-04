@@ -13,7 +13,7 @@ import zhusuan as zs
 
 
 if __name__ == "__main__":
-    tf.set_random_seed(1)
+    #tf.set_random_seed(1)
 
     # Define model parameters
     stdev = 0.5

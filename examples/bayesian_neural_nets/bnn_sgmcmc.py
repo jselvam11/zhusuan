@@ -36,8 +36,8 @@ def build_bnn(x, layer_sizes, logstds, n_particles):
 
 
 def main():
-    tf.set_random_seed(1237)
-    np.random.seed(2345)
+    #tf.set_random_seed(1237)
+    #np.random.seed(2345)
 
     # Load UCI protein data
     data_path = os.path.join(conf.data_dir, "protein.data")

@@ -52,7 +52,7 @@ class TestMultivariateNormalCholesky(tf.test.TestCase):
             self.assertEqual(list(dst.value_shape.eval(feed_dict)), [2])
 
     def _gen_test_params(self, seed):
-        np.random.seed(seed)
+        #np.random.seed(seed)
         mean = 10 * np.random.normal(size=(10, 11, 3)).astype('d')
         cov = np.zeros((10, 11, 3, 3))
         cov_chol = np.zeros_like(cov)
@@ -970,7 +970,7 @@ class TestMatrixVariateNormalCholesky(tf.test.TestCase):
             self.assertEqual(list(dst.value_shape.eval(feed_dict)), [2, 3])
 
     def _gen_test_params(self, seed):
-        np.random.seed(seed)
+        #np.random.seed(seed)
         mean = 10 * np.random.normal(size=(10, 11, 2, 3)).astype('d')
         u = np.zeros((10, 11, 2, 2))
         v = np.zeros((10, 11, 3, 3))
@@ -991,7 +991,7 @@ class TestMatrixVariateNormalCholesky(tf.test.TestCase):
     def fixed_randomness_session(self, seed):
         with tf.Graph().as_default() as g:
             with self.session(use_gpu=True, graph=g):
-                tf.set_random_seed(seed)
+                #tf.set_random_seed(seed)
                 yield
 
     def test_sample(self):

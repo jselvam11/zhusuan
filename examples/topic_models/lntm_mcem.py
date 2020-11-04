@@ -49,7 +49,7 @@ def lntm(n_chains, n_docs, n_topics, n_vocab, eta_mean, eta_logstd):
 
 
 if __name__ == "__main__":
-    tf.set_random_seed(1237)
+    #tf.set_random_seed(1237)
 
     # Load nips dataset
     data_name = 'nips'

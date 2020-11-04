@@ -64,8 +64,8 @@ def discriminator(x, is_training, ndf=16):
 
 
 def main():
-    tf.set_random_seed(1234)
-    np.random.seed(1234)
+    #tf.set_random_seed(1234)
+    #np.random.seed(1234)
 
     # Load MINST
     data_path = os.path.join(conf.data_dir, "mnist.pkl.gz")

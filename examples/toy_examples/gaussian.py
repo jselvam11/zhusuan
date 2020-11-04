@@ -21,7 +21,7 @@ def gaussian(n_x, stdev, n_particles):
 
 
 if __name__ == "__main__":
-    tf.set_random_seed(1)
+    #tf.set_random_seed(1)
 
     # Define model parameters
     n_x = 1

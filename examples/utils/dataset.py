@@ -168,7 +168,7 @@ def load_mnist_semi_supervised(path, one_hot=True, seed=123456):
 
     :return: The MNIST dataset for semi-supervised learning.
     """
-    rng = np.random.RandomState(seed=seed)
+    #rng = np.random.RandomState(seed=seed)
     x_train, t_train, x_valid, t_valid, x_test, t_test = \
         load_mnist_realval(path, one_hot=False)
     x_train = np.vstack([x_train, x_valid]).astype('float32')
@@ -273,7 +273,7 @@ def load_cifar10_semi_supervised(path, normalize=True, dequantify=False,
 
     :return: The cifar10 dataset for semi-supervised learning.
     """
-    rng = np.random.RandomState(seed=seed)
+    #rng = np.random.RandomState(seed=seed)
     x_train, t_train, x_test, t_test = load_cifar10(
         path, normalize=normalize, dequantify=dequantify, one_hot=False)
     x_train_by_class = []

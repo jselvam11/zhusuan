@@ -60,8 +60,8 @@ def discriminator(x, is_training, ndf=32):
 
 
 def main():
-    tf.set_random_seed(1234)
-    np.random.seed(1234)
+    #tf.set_random_seed(1234)
+    #np.random.seed(1234)
 
     # Load CIFAR
     data_path = os.path.join(conf.data_dir, "cifar10", "cifar-10-python.tar.gz")

@@ -61,8 +61,8 @@ def select_from_corpus(l, r, u_v, u_v_score):
 
 
 def main():
-    np.random.seed(1234)
-    tf.set_random_seed(1237)
+    #np.random.seed(1234)
+    #tf.set_random_seed(1237)
     M, N, train_data, valid_data, test_data, user_movie, user_movie_score, \
         movie_user, movie_user_score = dataset.load_movielens1m_mapped(
             os.path.join(conf.data_dir, 'ml-1m.zip'))
